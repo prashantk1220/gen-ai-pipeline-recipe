@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "whats-for-dinner"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+haystack-ai = "2.2.4"
+fastapi = "^0.111.0"
+psycopg2-binary = "^2.9.9"
+pillow = "^10.4.0"
+pgvector-haystack = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-mock = "^3.14.0"
+
+[tool.poetry.scripts]
+start = "whats_for_dinner.main:start_app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+.task
+*.json
+.ruff_cache
+.venv
+venv/
+.env
+.idea/
+__pycache__
